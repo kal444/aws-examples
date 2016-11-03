@@ -1,0 +1,16 @@
+---
+base_timezone: US/Central
+base_upgrade_packages: true
+
+postfix_ipv4_downgrade: true
+
+users_users_default:
+  app:
+    name: App User
+    shell: /bin/bash
+    groups: ''
+    sudo_enabled: true
+    sudo_nopassword: true
+    disable_password: true
+    generate_ssh_key: true
+    authorized_key: ssh-rsa AAAAB3NzaC1yc2EAAAABJQAAAgEAiuF6jhWSaklSJ5x98p53Rhj/IWgsJaMVxSMxe2KbzHXylA3Ww6OHNtKT050gXuBXpn/W4SNXMLI3PC3KQLKwNk2C/xF5U5QKRgpPunQiHzwFV6RUksXDQopOU7YuO7TaDmFYw0nAiAloDhWCu6xeX0N6hVKE3hz6TNkoxZId6UqMIHo/PFEwwqfHl8f6P4mNV+gakdeXLUeVNAb3erAN7HNgI8VzgCaHUbeMwz0LKkfl/7vnX/U4D8XM8QFK7oFXBPMqAMj2Z3zebV0rWBRSusLVJ++O9DJP2gzxYoaTyB7esdm8z814nOIgdrqU1xYOzZMpcDvFxpOb3L9YBtXXYx9IpBr+d5KLdgcUob7cIqEEwN/KnTLT8MQX4oqj00M4p5xn5gtE83bFXNH7zqOEk2ntA1owRHD90mhNao/IYXSpLlQe+hFj2G8KiySXGXi2Fj+4wuTu1svGlzs+9MXe/79f8VzOkW45Zza4NifrFKeOmltKjEMLIw17097uKvDzkkP8GsUImTPhu80WNCkpXSJunE4p+c4jnt3AhQ1qk5DVjYLlDXUDD1qXonggRba272K6AaENLaJywHajOOeI2RzHfGDSqqjJiZBlhZS0aUX7jJZHgA1OQMiulk9BuwzIKkWhF8vKAw3dNQQpd3qq7Hkdvv3zZxs+TZLmNHf1u+s= rsa-key-20081008-personal - kyle
