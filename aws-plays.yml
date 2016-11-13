@@ -3,7 +3,7 @@
   become: yes
 
   vars_files:
-    - vars.yml
+    - aws-plays-vars.yml
 
   roles:
     - { role: ansible-role-base }
@@ -14,3 +14,13 @@
       ntp_timezone: "{{ base_timezone }}"
       ntp_manage_config: false
     - { role: angstwad.docker_ubuntu }
+
+   tasks:
+     - name: create server volumes
+       filesystem: fstype=ext4 dev=/dev/xvdb
+     - name: mount server volumes
+       mount:
+         name: /opt
+         src: /dev/xvdb
+         fstype: ext4
+         state: mounted
